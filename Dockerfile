@@ -27,8 +27,5 @@ RUN set -ex \
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
-RUN rm -rf "$GOROOT/src"
-RUN rm -rf "$GOROOT/test"
-RUN rm -rf "$GOROOT/doc"
 RUN mkdir -p "$GOPATH/src" "$GOPATH/pkg" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH/src
