@@ -1,4 +1,4 @@
-FROM       ubuntu:16.10
+FROM       ubuntu:14.04.5
 MAINTAINER lnterface "https://github.com/lnterface"
 
 ENV GOLANG_VERSION 1.4.2
